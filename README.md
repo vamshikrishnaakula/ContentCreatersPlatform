@@ -51,39 +51,3 @@ _Setting up the crons_
 
 ````
 * * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
-````
-
-_Setting up payments_
-
-For stripe:
-1. In admin, add stripe public and secret key
-2. In stripe, create a webhook ( all events )
-3. Get Stripe's webhook secret and add it back to admin
-
-For PP:
-
-1. Login to PP Dev dashboard, create new app
-2. Get Paypal's ClientID & Paypal Secret key and add them into the admin
-
-
-### Ionicons usage
-
-Icons ( Ionicons )
-Backend
-
-````
- @ include('elements.icon',['icon'=>'chevron-heart'])
- @ include('elements.icon',['icon'=>'chevron-heart-outline'])
- @ include('elements.icon',['icon'=>'chevron-heart-outline','variant'=>'medium])
- @ include('elements.icon',['icon'=>'chevron-heart-outline','variant'=>'medium','centered'=>'true'])
-````
-            
-Frontend
-````
-< ion-icon name="heart"> 
-< ion-icon name="heart-outline"> 
-< ion-icon name="heart-sharp"> 
-< ion-icon size="small">
-< ion-icon size="large">
-````
-            
